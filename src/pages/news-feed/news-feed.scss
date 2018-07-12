@@ -6,11 +6,11 @@ page-news-feed {
     }
     .subtitle {
         min-height: 20px;
-        .toolbar-title-md {
+        .toolbar-title {
             font-size: 1.0rem;
         }
-        .toolbar-title-ios {
-            font-size: 1.0rem;
+        .toolbar-background {
+            background: color($colors, dark);
         }
     }
 }
