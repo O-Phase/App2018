@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TimedifferenceProvider } from '../../providers/timedifference/timedifference';
 
 /**
  * Generated class for the ZeitplanPage page.
@@ -15,11 +16,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ZeitplanPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ZeitplanPage');
+  }
+  ionViewDidEnter() {
+    this.timedifference.runTimer(3600);
   }
 
   openMap() {

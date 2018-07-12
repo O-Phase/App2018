@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
+import { TimedifferenceProvider } from '../../providers/timedifference/timedifference';
 
 /**
  * Generated class for the MeineGruppePage page.
@@ -23,7 +24,7 @@ Gruppe4;
 Gruppe5;
 
 
-  constructor(public navCtrl: NavController, private storage: Storage, public navParams: NavParams) {
+  constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, private storage: Storage, public navParams: NavParams) {
     this.storage.get('group').then((val) => {
       for(var i=1; i<=5; i++) {
         let elemAk = document.getElementById("g"+i);
@@ -37,6 +38,9 @@ Gruppe5;
     console.log('ionViewDidLoad MeineGruppePage');
     /*let element = document.getElementById("g1");
     element.style.display = "none";*/
+  }
+  ionViewDidEnter() {
+    this.timedifference.runTimer(3600);
   }
 
 
