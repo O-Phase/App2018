@@ -20,10 +20,25 @@ export class NewsFeedPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NewsFeedPage');
+    this.runTimer();
   }
 
   openMap() {
     this.navCtrl.push('KartePage');
+  }
+  countdown: any="10sekunden";
+  event: any="GaHa-Party";
+
+
+  public seconds =10;
+
+  runTimer() {
+    setTimeout(() => {
+      this.seconds--;
+      if (this.seconds>0) {
+        this.runTimer();
+      }
+    }, 1000)
   }
 
 }

@@ -1,13 +1,16 @@
 <ion-header>
 
-    <ion-navbar>
+    <ion-navbar class="title">
         <ion-title>KroKo-Phase</ion-title>
           <ion-buttons end>
               <button ion-button icon-only (click)="openMap()">
                   <ion-icon name="compass"></ion-icon>
               </button>
           </ion-buttons>
-      </ion-navbar>  
+      </ion-navbar>
+    <ion-toolbar class="subtitle">
+            <ion-title>Noch {{seconds}} bis {{event}}</ion-title>
+    </ion-toolbar>
   
   </ion-header>
   
