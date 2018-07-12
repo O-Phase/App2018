@@ -2,15 +2,4 @@ page-news-feed {
     iframe{
         outline-style: none;
     }
-    .title {
-    }
-    .subtitle {
-        min-height: 20px;
-        .toolbar-title {
-            font-size: 1.0rem;
-        }
-        .toolbar-background {
-            background: color($colors, dark);
-        }
-    }
 }
