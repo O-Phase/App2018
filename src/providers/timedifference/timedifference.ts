@@ -30,7 +30,7 @@ export class TimedifferenceProvider {
     this.anzeigesekunde = moment.duration(ms, "seconds").seconds();
 
 
-    console.log("moment", "RELEVANT", ms, this.anzeigemonat, this.anzeigetag, this.anzeigestunde, this.anzeigeminute, this.anzeigesekunde);
+    console.log("runTimer aufgerufen");
     setTimeout(() => {
       seconds--;
       if (seconds>0) {
