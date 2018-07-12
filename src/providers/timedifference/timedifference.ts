@@ -23,10 +23,10 @@ export class TimedifferenceProvider {
   runTimer(seconds) {
     console.log("runTimer aufgerufen");
     setTimeout(() => {
-      var ophase = moment("2018-10-08T08:00");
-      var ms = moment.duration(moment(ophase).diff(moment())).asSeconds();
-      this.anzeigemonat = moment.duration(ms, "seconds").months();
-      this.anzeigetag = moment.duration(ms, "seconds").days();
+      var ophase = moment("2018-10-08T08:00"); //time of the event
+      var ms = moment.duration(moment(ophase).diff(moment())).asSeconds(); //time difference between current time and o-phase in seconds
+      this.anzeigemonat = moment.duration(ms, "seconds").months(); //months of the time difference
+      this.anzeigetag = moment.duration(ms, "seconds").days(); //days of the time difference and so on
       this.anzeigestunde = moment.duration(ms, "seconds").hours();
       this.anzeigeminute = moment.duration(ms, "seconds").minutes();
       this.anzeigesekunde = moment.duration(ms, "seconds").seconds();
