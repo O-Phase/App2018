@@ -22,10 +22,6 @@ export class ZeitplanPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ZeitplanPage');
   }
-  ionViewDidEnter() {
-    this.timedifference.runTimer(3600);
-  }
-
   openMap() {
     this.navCtrl.push('KartePage');
   }

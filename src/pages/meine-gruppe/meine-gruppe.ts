@@ -17,11 +17,6 @@ import { TimedifferenceProvider } from '../../providers/timedifference/timediffe
 })
 export class MeineGruppePage {
 GruppeNummer;
-Gruppe1;
-Gruppe2;
-Gruppe3;
-Gruppe4;
-Gruppe5;
 
 
   constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, private storage: Storage, public navParams: NavParams) {
@@ -38,9 +33,6 @@ Gruppe5;
     console.log('ionViewDidLoad MeineGruppePage');
     /*let element = document.getElementById("g1");
     element.style.display = "none";*/
-  }
-  ionViewDidEnter() {
-    this.timedifference.runTimer(3600);
   }
 
 

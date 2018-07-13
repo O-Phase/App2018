@@ -59,9 +59,6 @@ export class InfosPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad InfosPage');
   }
-  ionViewDidEnter() {
-    this.timedifference.runTimer(3600);
-  }
 
   openMap() {
     this.navCtrl.push('KartePage');

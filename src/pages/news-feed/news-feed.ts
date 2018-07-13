@@ -23,9 +23,6 @@ export class NewsFeedPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NewsFeedPage');
-  }
-  
-  ionViewDidEnter() {
     this.timedifference.runTimer(3600);
   }
 
