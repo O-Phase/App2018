@@ -23,8 +23,9 @@ export class NewsFeedPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NewsFeedPage');
-    this.timedifference.runTimer(3600);
+    this.timedifference.runTimer("NewsFeedPage");
   }
+  
 
   openMap() {
     this.navCtrl.push('KartePage');

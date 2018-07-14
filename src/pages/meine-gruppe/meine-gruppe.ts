@@ -31,9 +31,11 @@ GruppeNummer;
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MeineGruppePage');
+    this.timedifference.runTimer("meineGruppePage");
     /*let element = document.getElementById("g1");
     element.style.display = "none";*/
   }
+
 
 
 

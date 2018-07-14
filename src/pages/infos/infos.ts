@@ -58,6 +58,7 @@ export class InfosPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InfosPage');
+    this.timedifference.runTimer("InfosPage");
   }
 
   openMap() {
