@@ -14,7 +14,9 @@ import { TimedifferenceProvider } from '../providers/timedifference/timedifferen
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp,
+      {tabsPlacement: 'top',tabsHideOnSubPages: true}
+    ),
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
