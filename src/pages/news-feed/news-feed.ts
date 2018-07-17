@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TimedifferenceProvider } from '../../providers/timedifference/timedifference';
 
 /**
  * Generated class for the NewsFeedPage page.
@@ -12,18 +13,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-news-feed',
   templateUrl: 'news-feed.html',
+  providers: [TimedifferenceProvider]
 })
 export class NewsFeedPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, public navParams: NavParams) {
   }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NewsFeedPage');
+    this.timedifference.runTimer("NewsFeedPage");
   }
+  
 
   openMap() {
     this.navCtrl.push('KartePage');
   }
+
+
 
 }

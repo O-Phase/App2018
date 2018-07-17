@@ -14,3 +14,19 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.subtitle {
+    min-height: 20px;
+    .toolbar-title {
+        font-size: 0.9rem;
+    }
+    .toolbar-background {
+        background: color($colors, dark);
+    }
+}
+
+.ios {
+    .padding-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

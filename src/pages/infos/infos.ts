@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { AlertController } from 'ionic-angular';
+import { TimedifferenceProvider } from '../../providers/timedifference/timedifference';
 
 
 /**
@@ -18,7 +19,7 @@ import { AlertController } from 'ionic-angular';
 })
 export class InfosPage {
 
-  constructor(public navCtrl: NavController, private alertCtrl: AlertController, private storage: Storage, public navParams: NavParams) {
+  constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, private alertCtrl: AlertController, private storage: Storage, public navParams: NavParams) {
   }
 
   logoutAlert() {
@@ -57,6 +58,7 @@ export class InfosPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InfosPage');
+    this.timedifference.runTimer("InfosPage");
   }
 
   openMap() {
