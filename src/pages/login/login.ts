@@ -59,6 +59,153 @@ export class LoginPage {
         this.navCtrl.setRoot('TabsPage');
          break; 
       }
+      case "gruppe6": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 6);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe7": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 7);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe8": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 8);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe9": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 9);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe10": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 10);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe11": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 11);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe12": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 12);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe13": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 13);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe14": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 14);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe15": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 15);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe16": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 16);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe17": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 17);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe18": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 18);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe19": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 19);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe20": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 20);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe21": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 21);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe22": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 22);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe23": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 23);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe24": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 24);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe25": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 25);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
+      case "gruppe26": { 
+        this.storage.set("isLoggedIn", true);
+        this.storage.set("group", 26);
+        this.navCtrl.push('TabsPage');
+        this.navCtrl.setRoot('TabsPage');
+         break; 
+      }
       default: { 
          this.presentAlert();
          break; 
