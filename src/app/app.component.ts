@@ -37,12 +37,6 @@ export class MyApp {
       // OneSignal Code start:
       // Enable to debug issues:
       // window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-
-      var notificationOpenedCallback = function(jsonData) {
-      console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-      };
-
-
       if (isCordovaAvailable()){
         this.oneSignal.startInit("cfeded7c-2512-4e8b-8725-f6bd46862601", "1048538306662");
 	        this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.Notification);
