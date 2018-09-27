@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage';
 
 import { MyApp } from './app.component';
+import { OneSignal } from '@ionic-native/onesignal';
 import { TimedifferenceProvider } from '../providers/timedifference/timedifference';
 
 @NgModule({
@@ -27,6 +28,7 @@ import { TimedifferenceProvider } from '../providers/timedifference/timedifferen
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    OneSignal,
     TimedifferenceProvider
   ]
 })

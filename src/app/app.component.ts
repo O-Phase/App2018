@@ -3,6 +3,8 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Storage } from '@ionic/storage';
+import { OneSignal, OSNotificationPayload } from '@ionic-native/onesignal';
+import { isCordovaAvailable } from '../common/is-cordova-available';
 
 @Component({
   templateUrl: 'app.html'
@@ -10,7 +12,13 @@ import { Storage } from '@ionic/storage';
 export class MyApp {
   rootPage:any
 
-  constructor(platform: Platform, storage: Storage, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(
+    platform: Platform,
+    storage: Storage,
+    statusBar: StatusBar,
+    splashScreen: SplashScreen,
+    private oneSignal: OneSignal
+  ) {
     storage.get("isLoggedIn").then((status) => {
       console.log("component logged in?", status)
       if(status) {
@@ -25,7 +33,32 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+
+      // OneSignal Code start:
+      // Enable to debug issues:
+      // window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+
+      var notificationOpenedCallback = function(jsonData) {
+      console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+      };
+
+
+      if (isCordovaAvailable()){
+        this.oneSignal.startInit("cfeded7c-2512-4e8b-8725-f6bd46862601", "1048538306662");
+	        this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.Notification);
+	        this.oneSignal.handleNotificationReceived().subscribe(data => this.onPushReceived(data.payload));
+	        this.oneSignal.handleNotificationOpened().subscribe(data => this.onPushOpened(data.notification.payload));
+          this.oneSignal.endInit();
+      }
     });
+  }
+
+  private onPushReceived(payload: OSNotificationPayload) {
+    alert('Push recevied:' + payload.body);
+  }
+  
+  private onPushOpened(payload: OSNotificationPayload) {
+    alert('Push opened: ' + payload.body);
   }
 
  goToTabsPage ( ) {
