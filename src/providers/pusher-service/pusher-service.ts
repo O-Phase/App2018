@@ -1,17 +1,18 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+    import { Injectable } from '@angular/core';
+    declare const Pusher: any;
+    @Injectable()
+    export class PusherServiceProvider {
+      channel;
+      constructor(public http: HttpClient) {
+      var pusher = new Pusher("PUSHER_KEY", { 
+      cluster: 'eu',
+      encrypted: true,
+      });
+      this.channel = pusher.subscribe('comments');
+    }
 
-/*
-  Generated class for the PusherServiceProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-@Injectable()
-export class PusherServiceProvider {
-
-  constructor(public http: HttpClient) {
-    console.log('Hello PusherServiceProvider Provider');
-  }
-
-}
+      public init(){
+       return this.channel;
+      }
+    }

@@ -1,13 +1,17 @@
+
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular/umd';
-import { KartePage } from './karte';
+import { HomePage } from './home';
+
+
 
 @NgModule({
   declarations: [
-    KartePage,
+    HomePage,
   ],
   imports: [
-    IonicPageModule.forChild(KartePage),
+    IonicPageModule.forChild(HomePage),
   ],
 })
-export class KartePageModule {}
+export class ChatzPageModule {
+}
