@@ -20,13 +20,13 @@ GruppeNummer;
 
 
   constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, private storage: Storage, public navParams: NavParams) {
-    this.storage.get('group').then((val) => {
+    /*this.storage.get('group').then((val) => {
       for(var i=1; i<=25; i++) {
         let elemAk = document.getElementById("g"+i);
         if(i != val) {
           elemAk.style.display = "none";  }
       }
-    });
+    });*/
   }
 
   ionViewDidLoad() {
