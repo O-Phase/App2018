@@ -8,6 +8,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 import { OneSignal } from '@ionic-native/onesignal';
 import { TimedifferenceProvider } from '../providers/timedifference/timedifference';
+import { PusherServiceProvider } from '../providers/pusher-service/pusher-service';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { TimedifferenceProvider } from '../providers/timedifference/timedifferen
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     OneSignal,
-    TimedifferenceProvider
+    TimedifferenceProvider,
+    PusherServiceProvider
   ]
 })
 export class AppModule {}
