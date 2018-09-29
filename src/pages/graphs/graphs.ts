@@ -28,4 +28,8 @@ export class GraphsPage {
     this.navCtrl.push('KartePage');
   }
 
+  refresh() {
+    this.navCtrl.setRoot(this.navCtrl.getActive().component);
+  }
+
 }
