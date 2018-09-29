@@ -1,36 +1,34 @@
 <ion-header>
 
     <ion-navbar class="title">
-        <ion-title><ion-icon name="beer"></ion-icon>&nbsp;&nbsp;KroKo-Phase</ion-title>
-          <ion-buttons end>
-              <button ion-button icon-only (click)="openMap()">
-                  <ion-icon name="compass"></ion-icon>
-              </button>
-          </ion-buttons>
-      </ion-navbar>
+        <ion-title>
+            <ion-icon name="beer"></ion-icon>&nbsp;&nbsp;KroKo-Phase</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="openMap()">
+                <ion-icon name="compass"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
     <ion-toolbar class="subtitle">
-            <ion-title class="padding-0">Noch {{timedifference.anzeigetag}} Tage {{timedifference.anzeigestunde}} Stunden {{timedifference.anzeigeminute}} Minuten {{timedifference.anzeigesekunde}} Sekunden bis {{timedifference.anzeigeevent}}!</ion-title>
+        <ion-title class="padding-0">Noch {{timedifference.anzeigetag}} Tage {{timedifference.anzeigestunde}} Stunden {{timedifference.anzeigeminute}}
+            Minuten {{timedifference.anzeigesekunde}} Sekunden bis {{timedifference.anzeigeevent}}!</ion-title>
     </ion-toolbar>
-  
-  </ion-header>
-  
-  
-  <ion-content padding>
 
-       
-       
-        
+</ion-header>
+
+
+<ion-content padding>
 
 
 
-        <div>
-            <iframe src="http://o-phase.de/app/newsfeed/O-Phase%20Newsfeed"
-            height="1000"
-            scrolling="auto"
-            width="100%"
-            frameBorder="0">
+
+
+
+
+    <div>
+        <iframe src="http://o-phase.de/app/newsfeed/O-Phase%20Newsfeed" height="1000" scrolling="auto" width="100%" frameBorder="0">
 
         </iframe>
-        </div>
-  
-  </ion-content>
+    </div>
+
+</ion-content>

@@ -1,0 +1,32 @@
+<!--
+  Generated template for the GraphsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>KroKo-Phase</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openMap()">
+        <ion-icon name="compass"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar class="subtitle">
+    <ion-title class="padding-0">Noch {{timedifference.anzeigetag}} Tage {{timedifference.anzeigestunde}} Stunden {{timedifference.anzeigeminute}} Minuten
+      {{timedifference.anzeigesekunde}} Sekunden bis {{timedifference.anzeigeevent}}!</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS-I3fxec0yXV4CCyJM6owVTvZaGKz6BZlb-rLakvm15Uvwf73UtW2sBwa1cbKB_7IGIlU9dcILOMrN/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+      height="500" scrolling="auto" width="100%" frameBorder="0">
+
+    </iframe>
+  </div>
+</ion-content>
