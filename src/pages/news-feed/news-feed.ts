@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Storage } from '@ionic/storage';
 import { AlertController } from 'ionic-angular';
 import { TimedifferenceProvider } from '../../providers/timedifference/timedifference';
 
@@ -19,20 +18,13 @@ import { TimedifferenceProvider } from '../../providers/timedifference/timediffe
 })
 export class NewsFeedPage {
 
-  constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, private alertCtrl: AlertController, private storage: Storage, public navParams: NavParams) {
+  constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, private alertCtrl: AlertController, public navParams: NavParams) {
   }
 
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NewsFeedPage');
     this.timedifference.runTimer("NewsFeedPage");
-    /*this.storage.get("firstLogin").then((firstLoginLocal) => {
-      if (firstLoginLocal != true) {
-        this.FirstTimeAlert;
-        console.log("first Login?" + firstLoginLocal);
-      }
-      this.storage.set("firstLogin", true);
-    });*/
   }
 
   ionViewDidEnter() {
