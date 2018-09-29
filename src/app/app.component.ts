@@ -48,11 +48,10 @@ export class MyApp {
   }
 
   private onPushReceived(payload: OSNotificationPayload) {
-    alert('Push recevied:' + payload.body);
+    alert(payload.body);
   }
   
   private onPushOpened(payload: OSNotificationPayload) {
-    alert('Push opened: ' + payload.body);
   }
 
  goToTabsPage ( ) {
