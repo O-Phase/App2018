@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Storage } from '@ionic/storage';
 import { OneSignal, OSNotificationPayload } from '@ionic-native/onesignal';
 import { isCordovaAvailable } from '../common/is-cordova-available';
+import { AlertController } from 'ionic-angular';
 
 @Component({
   templateUrl: 'app.html'
@@ -17,7 +18,8 @@ export class MyApp {
     storage: Storage,
     statusBar: StatusBar,
     splashScreen: SplashScreen,
-    private oneSignal: OneSignal
+    private oneSignal: OneSignal,
+    private alertCtrl: AlertController, 
   ) {
     storage.get("isLoggedIn").then((status) => {
       console.log("component logged in?", status)
@@ -48,7 +50,13 @@ export class MyApp {
   }
 
   private onPushReceived(payload: OSNotificationPayload) {
-    alert(payload.body);
+    //alert(payload.body);
+    let alert = this.alertCtrl.create({
+      title: payload.title,
+      message: payload.body,
+      buttons: ['Ok']
+    });
+    alert.present();
   }
   
   private onPushOpened(payload: OSNotificationPayload) {
