@@ -192,13 +192,6 @@ export class LoginPage {
         this.navCtrl.setRoot('TabsPage');
          break; 
       }
-      case "gruppe25": { 
-        this.storage.set("isLoggedIn", true);
-        this.storage.set("group", 25);
-        this.navCtrl.push('TabsPage');
-        this.navCtrl.setRoot('TabsPage');
-         break; 
-      }
       default: { 
          this.presentAlert();
          break; 

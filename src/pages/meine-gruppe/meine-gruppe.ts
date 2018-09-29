@@ -16,17 +16,18 @@ import { TimedifferenceProvider } from '../../providers/timedifference/timediffe
   templateUrl: 'meine-gruppe.html',
 })
 export class MeineGruppePage {
-GruppeNummer;
+  GruppeNummer;
 
 
   constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, private storage: Storage, public navParams: NavParams) {
-    /*this.storage.get('group').then((val) => {
-      for(var i=1; i<=25; i++) {
-        let elemAk = document.getElementById("g"+i);
-        if(i != val) {
-          elemAk.style.display = "none";  }
+    this.storage.get('group').then((val) => {
+      for (var i = 1; i <= 24; i++) {
+        let elemAk = document.getElementById("g" + i);
+        if (i != val) {
+          elemAk.style.display = "none";
+        }
       }
-    });*/
+    });
   }
 
   ionViewDidLoad() {
@@ -39,7 +40,7 @@ GruppeNummer;
 
 
 
-  displayGroup(){
+  displayGroup() {
     console.log('Gruppen Nummer:', this.GruppeNummer);
   }
 
