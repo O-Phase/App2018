@@ -15,11 +15,13 @@ export class TimedifferenceProvider {
   }
 
 
-  public anzeigemonat;
   public anzeigetag;
   public anzeigestunde;
   public anzeigeminute;
   public anzeigesekunde;
+  public anzeigeevent;
+  ms;
+  event;
 
 
   runTimer(page) {
@@ -55,17 +57,97 @@ export class TimedifferenceProvider {
       var thursdayNighttogo = moment.duration(moment(thursdayNight).diff(moment())).asSeconds();
       var profCafetogo = moment.duration(moment(profCafe).diff(moment())).asSeconds();
       var unirundgangtogo = moment.duration(moment(unirundgang).diff(moment())).asSeconds();
-      var flunkyBowltogo= moment.duration(moment(flunkyBowl).diff(moment())).asSeconds();
+      var flunkyBowltogo = moment.duration(moment(flunkyBowl).diff(moment())).asSeconds();
       var krokoKellertogo = moment.duration(moment(krokoKeller).diff(moment())).asSeconds();
       var gahaPartytogo = moment.duration(moment(gahaParty).diff(moment())).asSeconds();
 
-      var ms = Math.min(ophasetogo, kneipenbesuchtogo);
-      this.anzeigemonat = moment.duration(ms, "seconds").months(); //months of the time difference
-      this.anzeigetag = moment.duration(ms, "seconds").days(); //days of the time difference and so on
-      this.anzeigestunde = moment.duration(ms, "seconds").hours();
-      this.anzeigeminute = moment.duration(ms, "seconds").minutes();
-      this.anzeigesekunde = moment.duration(ms, "seconds").seconds();
+      var array = [ophasetogo, kneipenbesuchtogo, fruehstueck1togo, schlogaRallyetogo, karaokePartytogo, fruestueck2togo, elsassFahrttogo, cenClubtogo, fruestueck3togo, diskaverytogo, thursdayNighttogo, profCafetogo, unirundgangtogo, flunkyBowltogo, krokoKellertogo, gahaPartytogo]
+      for (var i = 0; i <= 15; i++) {
+        if (array[i] > 0) {
+          this.ms = array[i];
+          this.event = i;
+          console.log("zeit in sekunden: " + this.ms);
+          break;
+        }
+      }
+
+      switch (this.event) {
+        case 0: {
+          this.anzeigeevent = "zur O-Phase";
+          break;
+        }
+        case 1: {
+          this.anzeigeevent = "zum Kneipenbesuch";
+          break;
+        }
+        case 2: {
+          this.anzeigeevent = "zum Frühstück";
+          break;
+        }
+        case 3: {
+          this.anzeigeevent = "zur Schloga-Rallye";
+          break;
+        }
+        case 4: {
+          this.anzeigeevent = "zur Karaoke-Party";
+          break;
+        }
+        case 5: {
+          this.anzeigeevent = "zum Frühstück";
+          break;
+        }
+        case 6: {
+          this.anzeigeevent = "zur Elsass-Fahrt";
+          break;
+        }
+        case 7: {
+          this.anzeigeevent = "zum Cen Club";
+          break;
+        }
+        case 8: {
+          this.anzeigeevent = "zum Weißwurstfrühstück";
+          break;
+        }
+        case 9: {
+          this.anzeigeevent = "zur DisKAvery";
+          break;
+        }
+        case 10: {
+          this.anzeigeevent = "zur Thursday-Night";
+          break;
+        }
+        case 11: {
+          this.anzeigeevent = "zum Prof-Café";
+          break;
+        }
+        case 12: {
+          this.anzeigeevent = "zum Unirundgang";
+          break;
+        }
+        case 13: {
+          this.anzeigeevent = "zum Flunky-Bowl";
+          break;
+        }
+        case 14: {
+          this.anzeigeevent = "zum Krokokeller";
+          break;
+        }
+        case 15: {
+          this.anzeigeevent = "zur GaHa-Party";
+          break;
+        }
+        default: {
+          break;
+        }
+      }
+
+      //var ms = Math.min(ophasetogo, kneipenbesuchtogo, fruehstueck1togo, schlogaRallyetogo, karaokePartytogo, fruestueck2togo, elsassFahrttogo, cenClubtogo, fruestueck3togo, diskaverytogo, thursdayNighttogo, profCafetogo, unirundgangtogo, flunkyBowltogo, krokoKellertogo, gahaPartytogo);
+      this.anzeigetag = moment.duration(this.ms, "seconds").days(); //days of the time difference and so on
+      this.anzeigestunde = moment.duration(this.ms, "seconds").hours();
+      this.anzeigeminute = moment.duration(this.ms, "seconds").minutes();
+      this.anzeigesekunde = moment.duration(this.ms, "seconds").seconds();
       this.runTimer(page);
     }, 1000)
   }
+
 }
