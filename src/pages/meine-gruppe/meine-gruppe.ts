@@ -21,7 +21,7 @@ export class MeineGruppePage {
 
   constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, private storage: Storage, public navParams: NavParams) {
     this.storage.get('group').then((val) => {
-      for (var i = 1; i <= 24; i++) {
+      for (var i = 1; i <= 25; i++) {
         let elemAk = document.getElementById("g" + i);
         if (i != val) {
           elemAk.style.display = "none";
