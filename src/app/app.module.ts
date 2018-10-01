@@ -9,7 +9,6 @@ import { MyApp } from './app.component';
 import { OneSignal } from '@ionic-native/onesignal';
 import { TimedifferenceProvider } from '../providers/timedifference/timedifference';
 
-
 @NgModule({
   declarations: [
     MyApp,

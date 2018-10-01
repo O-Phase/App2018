@@ -19,6 +19,7 @@ export class ZeitplanPage {
   constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, public navParams: NavParams) {
   }
 
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad ZeitplanPage');
     this.timedifference.runTimer("ZeitplanPage");
