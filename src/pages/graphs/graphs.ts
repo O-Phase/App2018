@@ -32,4 +32,14 @@ export class GraphsPage {
     this.navCtrl.setRoot(this.navCtrl.getActive().component);
   }
 
+  openBier() {
+    this.navCtrl.push('BierPage');
+  }
+  openSchloga() {
+    this.navCtrl.push('SchlogaPage');
+  }
+  openKaraoke() {
+    this.navCtrl.push('KaraokePage');
+  }
+
 }
