@@ -22,4 +22,7 @@ export class BierPage {
     console.log('ionViewDidLoad BierPage');
   }
 
+  refresh() {
+  }
+
 }

@@ -22,4 +22,6 @@ export class SchlogaPage {
     console.log('ionViewDidLoad SchlogaPage');
   }
 
+  refresh() {
+  }
 }
