@@ -20,9 +20,15 @@ export class GraphsPage {
   }
 
   myColor: string = "#1985ff";
+  myColor2: string = "#ffffff";
   changeColor() {
     console.log("BUTTON PRESSED!!!!!");
     this.myColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    this.myColor2 = this.myColor;
+  }
+  resetColor() {
+    this.myColor = "#1985ff";
+    this.myColor2 = "#ffffff";
   }
 
   ionViewDidLoad() {
