@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 /**
- * Generated class for the KaraokePage page.
+ * Generated class for the FlunkyBowlPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 
 @IonicPage()
 @Component({
-  selector: 'page-karaoke',
-  templateUrl: 'karaoke.html',
+  selector: 'page-flunky-bowl',
+  templateUrl: 'flunky-bowl.html',
 })
-export class KaraokePage {
+export class FlunkyBowlPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad KaraokePage');
+    console.log('ionViewDidLoad FlunkyBowlPage');
   }
 
   refresh() {

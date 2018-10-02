@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the BierPage page.
@@ -15,7 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class BierPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
   }
 
   ionViewDidLoad() {
@@ -23,6 +23,10 @@ export class BierPage {
   }
 
   refresh() {
+    this.navCtrl.push(this.navCtrl.getActive().component).then(() => {
+      let index = this.viewCtrl.index;
+      this.navCtrl.remove(index);
+    })
   }
 
 }

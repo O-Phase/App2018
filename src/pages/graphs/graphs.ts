@@ -33,7 +33,6 @@ export class GraphsPage {
   openMap() {
     this.navCtrl.push('KartePage');
   }
-
   openBier() {
     this.navCtrl.push('BierPage');
   }
@@ -42,6 +41,12 @@ export class GraphsPage {
   }
   openKaraoke() {
     this.navCtrl.push('KaraokePage');
+  }
+  openFlunky() {
+    this.navCtrl.push('FlunkyBowlPage');
+  }
+  openGaha() {
+    this.navCtrl.push('GahaPartyPage');
   }
 
 }
