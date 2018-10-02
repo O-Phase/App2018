@@ -19,6 +19,12 @@ export class GraphsPage {
   constructor(private timedifference: TimedifferenceProvider, public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  myColor: string = "#1985ff";
+  changeColor() {
+    console.log("BUTTON PRESSED!!!!!");
+    this.myColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad GraphsPage');
     this.timedifference.runTimer("graphsPage");

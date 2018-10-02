@@ -34,7 +34,7 @@
     </ion-card-header>-->
 
 
-  <button ion-button block>Live</button>
+  <button ion-button block [style.backgroundColor]="myColor" (click)="changeColor()">Live</button>
   <ion-list>
     <button ion-item (click)="openBier()">
       <ion-icon name="ios-beer-outline" item-start></ion-icon>
