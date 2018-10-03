@@ -47,5 +47,5 @@ export class MeineGruppePage {
   openMap() {
     this.navCtrl.push('KartePage');
   }
-  
+
 }
