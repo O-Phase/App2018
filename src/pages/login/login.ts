@@ -24,91 +24,91 @@ export class LoginPage {
   login() {
     console.log(this.pw1);
     switch (this.pw1) {
-      case "Hallo": {
+      case "niemalsnuechtern": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 1);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "Nerd": {
+      case "SebastiansMum": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 2);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe3": {
+      case "SexyExxxen": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 3);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe4": {
+      case "FamilieVollsuff": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 4);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe5": {
+      case "HighFive": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 5);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe6": {
+      case "Ananas69": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 6);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe7": {
+      case "saufensogeil": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 7);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe8": {
+      case "8erbahn": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 8);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe9": {
+      case "Nasty9er": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 9);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe10": {
+      case "üüüüü": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 10);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe11": {
+      case "<<geil>>": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 11);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe12": {
+      case "EngineerYourBeer": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 12);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe13": {
+      case "Johnny Däpp": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 13);
         this.navCtrl.push('TabsPage');
@@ -122,21 +122,21 @@ export class LoginPage {
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe15": {
+      case "Fleischsalat": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 15);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe16": {
+      case "nichtlangschnacken": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 16);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe17": {
+      case "#Freibier69": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 17);
         this.navCtrl.push('TabsPage');
@@ -157,42 +157,42 @@ export class LoginPage {
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe20": {
+      case "BIER!!!": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 20);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe21": {
+      case "DickesHorn!?": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 21);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe22": {
+      case "KanakenCrew": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 22);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe23": {
+      case "Becherstadt": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 23);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe24": {
+      case "GOAT": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 24);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe25": {
+      case "$$$beschde€€€": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 25);
         this.navCtrl.push('TabsPage');
