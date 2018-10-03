@@ -115,7 +115,7 @@ export class LoginPage {
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe14": {
+      case "fickschnitzel69": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 14);
         this.navCtrl.push('TabsPage');
@@ -143,14 +143,14 @@ export class LoginPage {
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe18": {
+      case "18undgeil": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 18);
         this.navCtrl.push('TabsPage');
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "gruppe19": {
+      case "AlphaTier19": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 19);
         this.navCtrl.push('TabsPage');
