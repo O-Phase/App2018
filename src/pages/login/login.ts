@@ -94,7 +94,7 @@ export class LoginPage {
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "<<geil>>": {
+      case "gruppe11?leidergeil": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 11);
         this.navCtrl.push('TabsPage');
@@ -192,7 +192,7 @@ export class LoginPage {
         this.navCtrl.setRoot('TabsPage');
         break;
       }
-      case "$$$beschde€€€": {
+      case "$vonhintenrein$": {
         this.storage.set("isLoggedIn", true);
         this.storage.set("group", 25);
         this.navCtrl.push('TabsPage');
