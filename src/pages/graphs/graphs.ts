@@ -45,6 +45,9 @@ export class GraphsPage {
   openSchloga() {
     this.navCtrl.push('SchlogaPage');
   }
+  openTutorenfotos() {
+    this.navCtrl.push('TutorenfotosPage');
+  }
   openKaraoke() {
     this.navCtrl.push('KaraokePage');
   }
